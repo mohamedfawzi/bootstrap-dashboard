@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/app.min.css">
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+  
+      <!-- Sidebar -->
+      <div class="bg-dark border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Active Engine! </div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action">Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action">Overview</a>
+          <a href="#" class="list-group-item list-group-item-action">Events</a>
+          <a href="#" class="list-group-item list-group-item-action">Profile</a>
+          <a href="#" class="list-group-item list-group-item-action">Status</a>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+  
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="ad-wrapper">
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <button class="btn btn-dark" id="menu-toggle"><i class="fas fa-bars"></i></button>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img width="30" class="rounded user-img" src="dist/images/uqu-logo.png">
+                  <span>UQU Admin</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+        <div class="container-fluid">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <form id="msform" class="mt-5">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Select Data Source</li>
+                                <li>Matching Columns</li>
+                                <li>Confirmtion</li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <h2 class="fs-title">Create your account</h2>
+                                <h3 class="fs-subtitle">This is step 1</h3>
+                                <div class="form-group">
+                                    <label for="autoName">Automation Name</label>
+                                    <input type="text" class="form-control" id="autoName" placeholder="Enter Auromation Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="autoDes">Description</label>
+                                    <textarea class="form-control" id="autoDes" rows="3"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="dataSource">Data Source Type</label>
+                                    <select class="form-control" id="dataSource">
+                                        <option selected disabled>Select Data Source</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                  </div>   
+                                  <br>                            
+                                <button type="button" class="btn btn-success next float-right">Next</button>
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Social Profiles</h2>
+                                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                                <div class="form-group">
+                                    <label for="dataSource">Data Source Table</label>
+                                    <select class="form-control" id="dataSource">
+                                        <option selected disabled>Select Data</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                  </div>
+                                   <h5 class="text-secondary">Mapping Information</h5>
+                                   <hr>
+                                   <div class="form-group">
+                                        <label for="ItemName">Item Name</label>
+                                        <input type="text" class="form-control" id="ItemName" placeholder="Enter Item Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="valueType">Select Value Type</label>
+                                    <select class="form-control" id="valueType">
+                                      <option selected disabled>Select Value</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="prefix">Prefix</label>
+                                        <input type="text" class="form-control" id="prefix" placeholder="Enter Prefix">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="postfix">Prefix</label>
+                                        <input type="text" class="form-control" id="postfix" placeholder="Enter Postfix">
+                                  </div>
+                                  <br>
+                                <button type="button" class="btn btn-secondary previous">Previous</button>
+                                <button type="button" class="btn btn-success next float-right">Next</button>
+                               
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Personal Details</h2>
+                                <h3 class="fs-subtitle">We will never sell it</h3>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Automation Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Data Source Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>  
+                                  <br> 
+                                <button type="button" class="btn btn-secondary previous">Previous</button>
+                                <button type="button" class="btn btn-success next float-right">Next</button>
+                            </fieldset>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+  
+    </div>
+    <!-- /#wrapper -->
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
+    
+  
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      var listItem = $('#sidebar-wrapper .list-group-item');
+      listItem.on('click', function(){
+        listItem.removeClass('current');
+        $(this).addClass('current');
+
+      });
+      $(document).on("ready", function(){
+            $("#myModal").wizard({
+                onfinish:function(){
+                    console.log("Hola mundo");
+                }
+            });
+        });
+    </script>
+  
+  </body>
+</html>
